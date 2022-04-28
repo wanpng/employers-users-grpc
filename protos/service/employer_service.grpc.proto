@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package protos.service;
+
+option go_package = "github.com/wanpng/employers-users-grpc/grpc/service";
+option java_multiple_files = true;
+option java_package = "com.wanpng.employer.grpc.service";
+option java_outer_classname = "EmployerUsersProtos";
+
+import "protos/domain/company_profile.grpc.proto";
+
+service EmployerService {
+    rpc UpdateCompanyProfile(UpdateCompanyProfileRequest) returns (UpdateCompanyProfileResponse);
+}
+
+message UpdateCompanyProfileRequest {
+    protos.domain.CompanyProfileGrpc employer_user = 1;
+}
+
+message UpdateCompanyProfileResponse {
+    string employer_id = 1;
+}
