@@ -17,7 +17,6 @@ private static final long serialVersionUID = 0L;
   }
   private CompanyProfileGrpc() {
     id_ = "";
-    employerId_ = "";
     companyName_ = "";
   }
 
@@ -58,12 +57,6 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 18: {
-            java.lang.String s = input.readStringRequireUtf8();
-
-            employerId_ = s;
-            break;
-          }
-          case 26: {
             java.lang.String s = input.readStringRequireUtf8();
 
             companyName_ = s;
@@ -139,48 +132,10 @@ private static final long serialVersionUID = 0L;
     }
   }
 
-  public static final int EMPLOYER_ID_FIELD_NUMBER = 2;
-  private volatile java.lang.Object employerId_;
-  /**
-   * <code>string employer_id = 2;</code>
-   * @return The employerId.
-   */
-  @java.lang.Override
-  public java.lang.String getEmployerId() {
-    java.lang.Object ref = employerId_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
-    } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
-      employerId_ = s;
-      return s;
-    }
-  }
-  /**
-   * <code>string employer_id = 2;</code>
-   * @return The bytes for employerId.
-   */
-  @java.lang.Override
-  public com.google.protobuf.ByteString
-      getEmployerIdBytes() {
-    java.lang.Object ref = employerId_;
-    if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
-      employerId_ = b;
-      return b;
-    } else {
-      return (com.google.protobuf.ByteString) ref;
-    }
-  }
-
-  public static final int COMPANY_NAME_FIELD_NUMBER = 3;
+  public static final int COMPANY_NAME_FIELD_NUMBER = 2;
   private volatile java.lang.Object companyName_;
   /**
-   * <code>string company_name = 3;</code>
+   * <code>string company_name = 2;</code>
    * @return The companyName.
    */
   @java.lang.Override
@@ -197,7 +152,7 @@ private static final long serialVersionUID = 0L;
     }
   }
   /**
-   * <code>string company_name = 3;</code>
+   * <code>string company_name = 2;</code>
    * @return The bytes for companyName.
    */
   @java.lang.Override
@@ -232,11 +187,8 @@ private static final long serialVersionUID = 0L;
     if (!getIdBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 1, id_);
     }
-    if (!getEmployerIdBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, employerId_);
-    }
     if (!getCompanyNameBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 3, companyName_);
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, companyName_);
     }
     unknownFields.writeTo(output);
   }
@@ -250,11 +202,8 @@ private static final long serialVersionUID = 0L;
     if (!getIdBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, id_);
     }
-    if (!getEmployerIdBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, employerId_);
-    }
     if (!getCompanyNameBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, companyName_);
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, companyName_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -273,8 +222,6 @@ private static final long serialVersionUID = 0L;
 
     if (!getId()
         .equals(other.getId())) return false;
-    if (!getEmployerId()
-        .equals(other.getEmployerId())) return false;
     if (!getCompanyName()
         .equals(other.getCompanyName())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
@@ -290,8 +237,6 @@ private static final long serialVersionUID = 0L;
     hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + ID_FIELD_NUMBER;
     hash = (53 * hash) + getId().hashCode();
-    hash = (37 * hash) + EMPLOYER_ID_FIELD_NUMBER;
-    hash = (53 * hash) + getEmployerId().hashCode();
     hash = (37 * hash) + COMPANY_NAME_FIELD_NUMBER;
     hash = (53 * hash) + getCompanyName().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
@@ -429,8 +374,6 @@ private static final long serialVersionUID = 0L;
       super.clear();
       id_ = "";
 
-      employerId_ = "";
-
       companyName_ = "";
 
       return this;
@@ -460,7 +403,6 @@ private static final long serialVersionUID = 0L;
     public com.wanpng.employers-users.grpc.service.CompanyProfileGrpc buildPartial() {
       com.wanpng.employers-users.grpc.service.CompanyProfileGrpc result = new com.wanpng.employers-users.grpc.service.CompanyProfileGrpc(this);
       result.id_ = id_;
-      result.employerId_ = employerId_;
       result.companyName_ = companyName_;
       onBuilt();
       return result;
@@ -512,10 +454,6 @@ private static final long serialVersionUID = 0L;
       if (other == com.wanpng.employers-users.grpc.service.CompanyProfileGrpc.getDefaultInstance()) return this;
       if (!other.getId().isEmpty()) {
         id_ = other.id_;
-        onChanged();
-      }
-      if (!other.getEmployerId().isEmpty()) {
-        employerId_ = other.employerId_;
         onChanged();
       }
       if (!other.getCompanyName().isEmpty()) {
@@ -627,85 +565,9 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.lang.Object employerId_ = "";
-    /**
-     * <code>string employer_id = 2;</code>
-     * @return The employerId.
-     */
-    public java.lang.String getEmployerId() {
-      java.lang.Object ref = employerId_;
-      if (!(ref instanceof java.lang.String)) {
-        com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        employerId_ = s;
-        return s;
-      } else {
-        return (java.lang.String) ref;
-      }
-    }
-    /**
-     * <code>string employer_id = 2;</code>
-     * @return The bytes for employerId.
-     */
-    public com.google.protobuf.ByteString
-        getEmployerIdBytes() {
-      java.lang.Object ref = employerId_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        employerId_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    /**
-     * <code>string employer_id = 2;</code>
-     * @param value The employerId to set.
-     * @return This builder for chaining.
-     */
-    public Builder setEmployerId(
-        java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
-      employerId_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>string employer_id = 2;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearEmployerId() {
-      
-      employerId_ = getDefaultInstance().getEmployerId();
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>string employer_id = 2;</code>
-     * @param value The bytes for employerId to set.
-     * @return This builder for chaining.
-     */
-    public Builder setEmployerIdBytes(
-        com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
-      employerId_ = value;
-      onChanged();
-      return this;
-    }
-
     private java.lang.Object companyName_ = "";
     /**
-     * <code>string company_name = 3;</code>
+     * <code>string company_name = 2;</code>
      * @return The companyName.
      */
     public java.lang.String getCompanyName() {
@@ -721,7 +583,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>string company_name = 3;</code>
+     * <code>string company_name = 2;</code>
      * @return The bytes for companyName.
      */
     public com.google.protobuf.ByteString
@@ -738,7 +600,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>string company_name = 3;</code>
+     * <code>string company_name = 2;</code>
      * @param value The companyName to set.
      * @return This builder for chaining.
      */
@@ -753,7 +615,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>string company_name = 3;</code>
+     * <code>string company_name = 2;</code>
      * @return This builder for chaining.
      */
     public Builder clearCompanyName() {
@@ -763,7 +625,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>string company_name = 3;</code>
+     * <code>string company_name = 2;</code>
      * @param value The bytes for companyName to set.
      * @return This builder for chaining.
      */

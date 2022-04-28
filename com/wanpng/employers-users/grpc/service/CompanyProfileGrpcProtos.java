@@ -29,12 +29,12 @@ public final class CompanyProfileGrpcProtos {
   static {
     java.lang.String[] descriptorData = {
       "\n(protos/domain/company_profile.grpc.pro" +
-      "to\022\rprotos.domain\"K\n\022CompanyProfileGrpc\022" +
-      "\n\n\002id\030\001 \001(\t\022\023\n\013employer_id\030\002 \001(\t\022\024\n\014comp" +
-      "any_name\030\003 \001(\tBy\n\'com.wanpng.employers-u" +
-      "sers.grpc.serviceB\030CompanyProfileGrpcPro" +
-      "tosP\001Z2github.com/wanpng/employers-users" +
-      "-grpc/grpc/domainb\006proto3"
+      "to\022\rprotos.domain\"6\n\022CompanyProfileGrpc\022" +
+      "\n\n\002id\030\001 \001(\t\022\024\n\014company_name\030\002 \001(\tBy\n\'com" +
+      ".wanpng.employers-users.grpc.serviceB\030Co" +
+      "mpanyProfileGrpcProtosP\001Z2github.com/wan" +
+      "png/employers-users-grpc/grpc/domainb\006pr" +
+      "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -45,7 +45,7 @@ public final class CompanyProfileGrpcProtos {
     internal_static_protos_domain_CompanyProfileGrpc_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_protos_domain_CompanyProfileGrpc_descriptor,
-        new java.lang.String[] { "Id", "EmployerId", "CompanyName", });
+        new java.lang.String[] { "Id", "CompanyName", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

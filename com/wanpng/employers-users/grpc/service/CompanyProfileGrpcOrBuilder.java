@@ -20,24 +20,12 @@ public interface CompanyProfileGrpcOrBuilder extends
       getIdBytes();
 
   /**
-   * <code>string employer_id = 2;</code>
-   * @return The employerId.
-   */
-  java.lang.String getEmployerId();
-  /**
-   * <code>string employer_id = 2;</code>
-   * @return The bytes for employerId.
-   */
-  com.google.protobuf.ByteString
-      getEmployerIdBytes();
-
-  /**
-   * <code>string company_name = 3;</code>
+   * <code>string company_name = 2;</code>
    * @return The companyName.
    */
   java.lang.String getCompanyName();
   /**
-   * <code>string company_name = 3;</code>
+   * <code>string company_name = 2;</code>
    * @return The bytes for companyName.
    */
   com.google.protobuf.ByteString
