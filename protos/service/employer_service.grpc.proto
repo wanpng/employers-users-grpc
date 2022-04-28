@@ -14,7 +14,7 @@ service EmployerService {
 }
 
 message UpdateCompanyProfileRequest {
-    protos.domain.CompanyProfileGrpc employer_user = 1;
+    protos.domain.CompanyProfileGrpc employer_profile = 1;
 }
 
 message UpdateCompanyProfileResponse {
