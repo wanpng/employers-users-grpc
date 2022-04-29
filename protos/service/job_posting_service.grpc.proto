@@ -5,9 +5,9 @@ package protos.service;
 option go_package = "github.com/wanpng/employers-users-grpc/grpc/service";
 option java_multiple_files = true;
 option java_package = "com.wanpng.employers-users.grpc.service";
-option java_outer_classname = "EmployersUsersProtos";
+option java_outer_classname = "EmployersUsersServiceProtos";
 
-import "protos/domain/company_profile.grpc.proto";
+import "protos/domain/companyprofile.grpc.proto";
 
 service EmployersUsersService {
     rpc UpdateCompanyProfile(UpdateCompanyProfileRequest) returns (UpdateCompanyProfileResponse);
@@ -16,7 +16,6 @@ service EmployersUsersService {
 message UpdateCompanyProfileRequest {
     protos.domain.CompanyProfileGrpc employer_profile = 1;
 }
-
 message UpdateCompanyProfileResponse {
     string employer_id = 1;
 }
