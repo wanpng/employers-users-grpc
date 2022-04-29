@@ -3,8 +3,8 @@
 
 package com.wanpng.employers-users.grpc.service;
 
-public final class EmployerUsersProtos {
-  private EmployerUsersProtos() {}
+public final class EmployersUsersProtos {
+  private EmployersUsersProtos() {}
   public static void registerAllExtensions(
       com.google.protobuf.ExtensionRegistryLite registry) {
   }
@@ -39,18 +39,18 @@ public final class EmployerUsersProtos {
       "rofileRequest\022;\n\020employer_profile\030\001 \001(\0132" +
       "!.protos.domain.CompanyProfileGrpc\"3\n\034Up" +
       "dateCompanyProfileResponse\022\023\n\013employer_i" +
-      "d\030\001 \001(\t2\204\001\n\017EmployerService\022q\n\024UpdateCom" +
-      "panyProfile\022+.protos.service.UpdateCompa" +
-      "nyProfileRequest\032,.protos.service.Update" +
-      "CompanyProfileResponseBu\n\'com.wanpng.emp" +
-      "loyers-users.grpc.serviceB\023EmployerUsers" +
-      "ProtosP\001Z3github.com/wanpng/employers-us" +
-      "ers-grpc/grpc/serviceb\006proto3"
+      "d\030\001 \001(\t2\212\001\n\025EmployersUsersService\022q\n\024Upd" +
+      "ateCompanyProfile\022+.protos.service.Updat" +
+      "eCompanyProfileRequest\032,.protos.service." +
+      "UpdateCompanyProfileResponseBv\n\'com.wanp" +
+      "ng.employers-users.grpc.serviceB\024Employe" +
+      "rsUsersProtosP\001Z3github.com/wanpng/emplo" +
+      "yers-users-grpc/grpc/serviceb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          com.wanpng.employers-users.grpc.service.CompanyProfileGrpcProtos.getDescriptor(),
+          com.wanpng.employers-users.grpc.domain.CompanyProfileGrpcProtos.getDescriptor(),
         });
     internal_static_protos_service_UpdateCompanyProfileRequest_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -64,7 +64,7 @@ public final class EmployerUsersProtos {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_protos_service_UpdateCompanyProfileResponse_descriptor,
         new java.lang.String[] { "EmployerId", });
-    com.wanpng.employers-users.grpc.service.CompanyProfileGrpcProtos.getDescriptor();
+    com.wanpng.employers-users.grpc.domain.CompanyProfileGrpcProtos.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

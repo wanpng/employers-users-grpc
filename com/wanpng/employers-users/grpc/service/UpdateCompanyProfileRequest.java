@@ -49,11 +49,11 @@ private static final long serialVersionUID = 0L;
             done = true;
             break;
           case 10: {
-            com.wanpng.employers-users.grpc.service.CompanyProfileGrpc.Builder subBuilder = null;
+            com.wanpng.employers-users.grpc.domain.CompanyProfileGrpc.Builder subBuilder = null;
             if (employerProfile_ != null) {
               subBuilder = employerProfile_.toBuilder();
             }
-            employerProfile_ = input.readMessage(com.wanpng.employers-users.grpc.service.CompanyProfileGrpc.parser(), extensionRegistry);
+            employerProfile_ = input.readMessage(com.wanpng.employers-users.grpc.domain.CompanyProfileGrpc.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(employerProfile_);
               employerProfile_ = subBuilder.buildPartial();
@@ -82,19 +82,19 @@ private static final long serialVersionUID = 0L;
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.wanpng.employers-users.grpc.service.EmployerUsersProtos.internal_static_protos_service_UpdateCompanyProfileRequest_descriptor;
+    return com.wanpng.employers-users.grpc.service.EmployersUsersProtos.internal_static_protos_service_UpdateCompanyProfileRequest_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.wanpng.employers-users.grpc.service.EmployerUsersProtos.internal_static_protos_service_UpdateCompanyProfileRequest_fieldAccessorTable
+    return com.wanpng.employers-users.grpc.service.EmployersUsersProtos.internal_static_protos_service_UpdateCompanyProfileRequest_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             com.wanpng.employers-users.grpc.service.UpdateCompanyProfileRequest.class, com.wanpng.employers-users.grpc.service.UpdateCompanyProfileRequest.Builder.class);
   }
 
   public static final int EMPLOYER_PROFILE_FIELD_NUMBER = 1;
-  private com.wanpng.employers-users.grpc.service.CompanyProfileGrpc employerProfile_;
+  private com.wanpng.employers-users.grpc.domain.CompanyProfileGrpc employerProfile_;
   /**
    * <code>.protos.domain.CompanyProfileGrpc employer_profile = 1;</code>
    * @return Whether the employerProfile field is set.
@@ -108,14 +108,14 @@ private static final long serialVersionUID = 0L;
    * @return The employerProfile.
    */
   @java.lang.Override
-  public com.wanpng.employers-users.grpc.service.CompanyProfileGrpc getEmployerProfile() {
-    return employerProfile_ == null ? com.wanpng.employers-users.grpc.service.CompanyProfileGrpc.getDefaultInstance() : employerProfile_;
+  public com.wanpng.employers-users.grpc.domain.CompanyProfileGrpc getEmployerProfile() {
+    return employerProfile_ == null ? com.wanpng.employers-users.grpc.domain.CompanyProfileGrpc.getDefaultInstance() : employerProfile_;
   }
   /**
    * <code>.protos.domain.CompanyProfileGrpc employer_profile = 1;</code>
    */
   @java.lang.Override
-  public com.wanpng.employers-users.grpc.service.CompanyProfileGrpcOrBuilder getEmployerProfileOrBuilder() {
+  public com.wanpng.employers-users.grpc.domain.CompanyProfileGrpcOrBuilder getEmployerProfileOrBuilder() {
     return getEmployerProfile();
   }
 
@@ -288,13 +288,13 @@ private static final long serialVersionUID = 0L;
       com.wanpng.employers-users.grpc.service.UpdateCompanyProfileRequestOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.wanpng.employers-users.grpc.service.EmployerUsersProtos.internal_static_protos_service_UpdateCompanyProfileRequest_descriptor;
+      return com.wanpng.employers-users.grpc.service.EmployersUsersProtos.internal_static_protos_service_UpdateCompanyProfileRequest_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.wanpng.employers-users.grpc.service.EmployerUsersProtos.internal_static_protos_service_UpdateCompanyProfileRequest_fieldAccessorTable
+      return com.wanpng.employers-users.grpc.service.EmployersUsersProtos.internal_static_protos_service_UpdateCompanyProfileRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.wanpng.employers-users.grpc.service.UpdateCompanyProfileRequest.class, com.wanpng.employers-users.grpc.service.UpdateCompanyProfileRequest.Builder.class);
     }
@@ -329,7 +329,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.wanpng.employers-users.grpc.service.EmployerUsersProtos.internal_static_protos_service_UpdateCompanyProfileRequest_descriptor;
+      return com.wanpng.employers-users.grpc.service.EmployersUsersProtos.internal_static_protos_service_UpdateCompanyProfileRequest_descriptor;
     }
 
     @java.lang.Override
@@ -434,9 +434,9 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private com.wanpng.employers-users.grpc.service.CompanyProfileGrpc employerProfile_;
+    private com.wanpng.employers-users.grpc.domain.CompanyProfileGrpc employerProfile_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.wanpng.employers-users.grpc.service.CompanyProfileGrpc, com.wanpng.employers-users.grpc.service.CompanyProfileGrpc.Builder, com.wanpng.employers-users.grpc.service.CompanyProfileGrpcOrBuilder> employerProfileBuilder_;
+        com.wanpng.employers-users.grpc.domain.CompanyProfileGrpc, com.wanpng.employers-users.grpc.domain.CompanyProfileGrpc.Builder, com.wanpng.employers-users.grpc.domain.CompanyProfileGrpcOrBuilder> employerProfileBuilder_;
     /**
      * <code>.protos.domain.CompanyProfileGrpc employer_profile = 1;</code>
      * @return Whether the employerProfile field is set.
@@ -448,9 +448,9 @@ private static final long serialVersionUID = 0L;
      * <code>.protos.domain.CompanyProfileGrpc employer_profile = 1;</code>
      * @return The employerProfile.
      */
-    public com.wanpng.employers-users.grpc.service.CompanyProfileGrpc getEmployerProfile() {
+    public com.wanpng.employers-users.grpc.domain.CompanyProfileGrpc getEmployerProfile() {
       if (employerProfileBuilder_ == null) {
-        return employerProfile_ == null ? com.wanpng.employers-users.grpc.service.CompanyProfileGrpc.getDefaultInstance() : employerProfile_;
+        return employerProfile_ == null ? com.wanpng.employers-users.grpc.domain.CompanyProfileGrpc.getDefaultInstance() : employerProfile_;
       } else {
         return employerProfileBuilder_.getMessage();
       }
@@ -458,7 +458,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.protos.domain.CompanyProfileGrpc employer_profile = 1;</code>
      */
-    public Builder setEmployerProfile(com.wanpng.employers-users.grpc.service.CompanyProfileGrpc value) {
+    public Builder setEmployerProfile(com.wanpng.employers-users.grpc.domain.CompanyProfileGrpc value) {
       if (employerProfileBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -475,7 +475,7 @@ private static final long serialVersionUID = 0L;
      * <code>.protos.domain.CompanyProfileGrpc employer_profile = 1;</code>
      */
     public Builder setEmployerProfile(
-        com.wanpng.employers-users.grpc.service.CompanyProfileGrpc.Builder builderForValue) {
+        com.wanpng.employers-users.grpc.domain.CompanyProfileGrpc.Builder builderForValue) {
       if (employerProfileBuilder_ == null) {
         employerProfile_ = builderForValue.build();
         onChanged();
@@ -488,11 +488,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.protos.domain.CompanyProfileGrpc employer_profile = 1;</code>
      */
-    public Builder mergeEmployerProfile(com.wanpng.employers-users.grpc.service.CompanyProfileGrpc value) {
+    public Builder mergeEmployerProfile(com.wanpng.employers-users.grpc.domain.CompanyProfileGrpc value) {
       if (employerProfileBuilder_ == null) {
         if (employerProfile_ != null) {
           employerProfile_ =
-            com.wanpng.employers-users.grpc.service.CompanyProfileGrpc.newBuilder(employerProfile_).mergeFrom(value).buildPartial();
+            com.wanpng.employers-users.grpc.domain.CompanyProfileGrpc.newBuilder(employerProfile_).mergeFrom(value).buildPartial();
         } else {
           employerProfile_ = value;
         }
@@ -520,7 +520,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.protos.domain.CompanyProfileGrpc employer_profile = 1;</code>
      */
-    public com.wanpng.employers-users.grpc.service.CompanyProfileGrpc.Builder getEmployerProfileBuilder() {
+    public com.wanpng.employers-users.grpc.domain.CompanyProfileGrpc.Builder getEmployerProfileBuilder() {
       
       onChanged();
       return getEmployerProfileFieldBuilder().getBuilder();
@@ -528,23 +528,23 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.protos.domain.CompanyProfileGrpc employer_profile = 1;</code>
      */
-    public com.wanpng.employers-users.grpc.service.CompanyProfileGrpcOrBuilder getEmployerProfileOrBuilder() {
+    public com.wanpng.employers-users.grpc.domain.CompanyProfileGrpcOrBuilder getEmployerProfileOrBuilder() {
       if (employerProfileBuilder_ != null) {
         return employerProfileBuilder_.getMessageOrBuilder();
       } else {
         return employerProfile_ == null ?
-            com.wanpng.employers-users.grpc.service.CompanyProfileGrpc.getDefaultInstance() : employerProfile_;
+            com.wanpng.employers-users.grpc.domain.CompanyProfileGrpc.getDefaultInstance() : employerProfile_;
       }
     }
     /**
      * <code>.protos.domain.CompanyProfileGrpc employer_profile = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.wanpng.employers-users.grpc.service.CompanyProfileGrpc, com.wanpng.employers-users.grpc.service.CompanyProfileGrpc.Builder, com.wanpng.employers-users.grpc.service.CompanyProfileGrpcOrBuilder> 
+        com.wanpng.employers-users.grpc.domain.CompanyProfileGrpc, com.wanpng.employers-users.grpc.domain.CompanyProfileGrpc.Builder, com.wanpng.employers-users.grpc.domain.CompanyProfileGrpcOrBuilder> 
         getEmployerProfileFieldBuilder() {
       if (employerProfileBuilder_ == null) {
         employerProfileBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.wanpng.employers-users.grpc.service.CompanyProfileGrpc, com.wanpng.employers-users.grpc.service.CompanyProfileGrpc.Builder, com.wanpng.employers-users.grpc.service.CompanyProfileGrpcOrBuilder>(
+            com.wanpng.employers-users.grpc.domain.CompanyProfileGrpc, com.wanpng.employers-users.grpc.domain.CompanyProfileGrpc.Builder, com.wanpng.employers-users.grpc.domain.CompanyProfileGrpcOrBuilder>(
                 getEmployerProfile(),
                 getParentForChildren(),
                 isClean());

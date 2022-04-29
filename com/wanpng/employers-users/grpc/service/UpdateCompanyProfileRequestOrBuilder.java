@@ -16,9 +16,9 @@ public interface UpdateCompanyProfileRequestOrBuilder extends
    * <code>.protos.domain.CompanyProfileGrpc employer_profile = 1;</code>
    * @return The employerProfile.
    */
-  com.wanpng.employers-users.grpc.service.CompanyProfileGrpc getEmployerProfile();
+  com.wanpng.employers-users.grpc.domain.CompanyProfileGrpc getEmployerProfile();
   /**
    * <code>.protos.domain.CompanyProfileGrpc employer_profile = 1;</code>
    */
-  com.wanpng.employers-users.grpc.service.CompanyProfileGrpcOrBuilder getEmployerProfileOrBuilder();
+  com.wanpng.employers-users.grpc.domain.CompanyProfileGrpcOrBuilder getEmployerProfileOrBuilder();
 }
