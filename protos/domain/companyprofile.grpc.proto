@@ -9,5 +9,7 @@ option java_outer_classname = "CompanyProfileGrpcProtos";
 
 message CompanyProfileGrpc {
     string id = 1;
-    string company_name = 2;
+    string user_id = 2;
+    string company_name = 3;
+    string photo_url = 4;
 }

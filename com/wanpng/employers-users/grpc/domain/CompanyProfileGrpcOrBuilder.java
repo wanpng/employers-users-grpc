@@ -20,14 +20,38 @@ public interface CompanyProfileGrpcOrBuilder extends
       getIdBytes();
 
   /**
-   * <code>string company_name = 2;</code>
+   * <code>string user_id = 2;</code>
+   * @return The userId.
+   */
+  java.lang.String getUserId();
+  /**
+   * <code>string user_id = 2;</code>
+   * @return The bytes for userId.
+   */
+  com.google.protobuf.ByteString
+      getUserIdBytes();
+
+  /**
+   * <code>string company_name = 3;</code>
    * @return The companyName.
    */
   java.lang.String getCompanyName();
   /**
-   * <code>string company_name = 2;</code>
+   * <code>string company_name = 3;</code>
    * @return The bytes for companyName.
    */
   com.google.protobuf.ByteString
       getCompanyNameBytes();
+
+  /**
+   * <code>string photo_url = 4;</code>
+   * @return The photoUrl.
+   */
+  java.lang.String getPhotoUrl();
+  /**
+   * <code>string photo_url = 4;</code>
+   * @return The bytes for photoUrl.
+   */
+  com.google.protobuf.ByteString
+      getPhotoUrlBytes();
 }
