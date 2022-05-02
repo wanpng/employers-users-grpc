@@ -8,17 +8,17 @@ public interface UpdateCompanyProfileRequestOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.protos.domain.CompanyProfileGrpc employer_profile = 1;</code>
-   * @return Whether the employerProfile field is set.
+   * <code>.protos.domain.CompanyProfileGrpc company_profile = 1;</code>
+   * @return Whether the companyProfile field is set.
    */
-  boolean hasEmployerProfile();
+  boolean hasCompanyProfile();
   /**
-   * <code>.protos.domain.CompanyProfileGrpc employer_profile = 1;</code>
-   * @return The employerProfile.
+   * <code>.protos.domain.CompanyProfileGrpc company_profile = 1;</code>
+   * @return The companyProfile.
    */
-  com.wanpng.employers-users.grpc.domain.CompanyProfileGrpc getEmployerProfile();
+  com.wanpng.employers-users.grpc.domain.CompanyProfileGrpc getCompanyProfile();
   /**
-   * <code>.protos.domain.CompanyProfileGrpc employer_profile = 1;</code>
+   * <code>.protos.domain.CompanyProfileGrpc company_profile = 1;</code>
    */
-  com.wanpng.employers-users.grpc.domain.CompanyProfileGrpcOrBuilder getEmployerProfileOrBuilder();
+  com.wanpng.employers-users.grpc.domain.CompanyProfileGrpcOrBuilder getCompanyProfileOrBuilder();
 }
