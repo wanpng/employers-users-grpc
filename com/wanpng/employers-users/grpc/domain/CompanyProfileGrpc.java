@@ -17,9 +17,7 @@ private static final long serialVersionUID = 0L;
   }
   private CompanyProfileGrpc() {
     id_ = "";
-    userId_ = "";
     companyName_ = "";
-    photoUrl_ = "";
   }
 
   @java.lang.Override
@@ -61,19 +59,7 @@ private static final long serialVersionUID = 0L;
           case 18: {
             java.lang.String s = input.readStringRequireUtf8();
 
-            userId_ = s;
-            break;
-          }
-          case 26: {
-            java.lang.String s = input.readStringRequireUtf8();
-
             companyName_ = s;
-            break;
-          }
-          case 34: {
-            java.lang.String s = input.readStringRequireUtf8();
-
-            photoUrl_ = s;
             break;
           }
           default: {
@@ -146,48 +132,10 @@ private static final long serialVersionUID = 0L;
     }
   }
 
-  public static final int USER_ID_FIELD_NUMBER = 2;
-  private volatile java.lang.Object userId_;
-  /**
-   * <code>string user_id = 2;</code>
-   * @return The userId.
-   */
-  @java.lang.Override
-  public java.lang.String getUserId() {
-    java.lang.Object ref = userId_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
-    } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
-      userId_ = s;
-      return s;
-    }
-  }
-  /**
-   * <code>string user_id = 2;</code>
-   * @return The bytes for userId.
-   */
-  @java.lang.Override
-  public com.google.protobuf.ByteString
-      getUserIdBytes() {
-    java.lang.Object ref = userId_;
-    if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
-      userId_ = b;
-      return b;
-    } else {
-      return (com.google.protobuf.ByteString) ref;
-    }
-  }
-
-  public static final int COMPANY_NAME_FIELD_NUMBER = 3;
+  public static final int COMPANY_NAME_FIELD_NUMBER = 2;
   private volatile java.lang.Object companyName_;
   /**
-   * <code>string company_name = 3;</code>
+   * <code>string company_name = 2;</code>
    * @return The companyName.
    */
   @java.lang.Override
@@ -204,7 +152,7 @@ private static final long serialVersionUID = 0L;
     }
   }
   /**
-   * <code>string company_name = 3;</code>
+   * <code>string company_name = 2;</code>
    * @return The bytes for companyName.
    */
   @java.lang.Override
@@ -216,44 +164,6 @@ private static final long serialVersionUID = 0L;
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
       companyName_ = b;
-      return b;
-    } else {
-      return (com.google.protobuf.ByteString) ref;
-    }
-  }
-
-  public static final int PHOTO_URL_FIELD_NUMBER = 4;
-  private volatile java.lang.Object photoUrl_;
-  /**
-   * <code>string photo_url = 4;</code>
-   * @return The photoUrl.
-   */
-  @java.lang.Override
-  public java.lang.String getPhotoUrl() {
-    java.lang.Object ref = photoUrl_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
-    } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
-      photoUrl_ = s;
-      return s;
-    }
-  }
-  /**
-   * <code>string photo_url = 4;</code>
-   * @return The bytes for photoUrl.
-   */
-  @java.lang.Override
-  public com.google.protobuf.ByteString
-      getPhotoUrlBytes() {
-    java.lang.Object ref = photoUrl_;
-    if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
-      photoUrl_ = b;
       return b;
     } else {
       return (com.google.protobuf.ByteString) ref;
@@ -277,14 +187,8 @@ private static final long serialVersionUID = 0L;
     if (!getIdBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 1, id_);
     }
-    if (!getUserIdBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, userId_);
-    }
     if (!getCompanyNameBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 3, companyName_);
-    }
-    if (!getPhotoUrlBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 4, photoUrl_);
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, companyName_);
     }
     unknownFields.writeTo(output);
   }
@@ -298,14 +202,8 @@ private static final long serialVersionUID = 0L;
     if (!getIdBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, id_);
     }
-    if (!getUserIdBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, userId_);
-    }
     if (!getCompanyNameBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, companyName_);
-    }
-    if (!getPhotoUrlBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, photoUrl_);
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, companyName_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -324,12 +222,8 @@ private static final long serialVersionUID = 0L;
 
     if (!getId()
         .equals(other.getId())) return false;
-    if (!getUserId()
-        .equals(other.getUserId())) return false;
     if (!getCompanyName()
         .equals(other.getCompanyName())) return false;
-    if (!getPhotoUrl()
-        .equals(other.getPhotoUrl())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -343,12 +237,8 @@ private static final long serialVersionUID = 0L;
     hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + ID_FIELD_NUMBER;
     hash = (53 * hash) + getId().hashCode();
-    hash = (37 * hash) + USER_ID_FIELD_NUMBER;
-    hash = (53 * hash) + getUserId().hashCode();
     hash = (37 * hash) + COMPANY_NAME_FIELD_NUMBER;
     hash = (53 * hash) + getCompanyName().hashCode();
-    hash = (37 * hash) + PHOTO_URL_FIELD_NUMBER;
-    hash = (53 * hash) + getPhotoUrl().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -484,11 +374,7 @@ private static final long serialVersionUID = 0L;
       super.clear();
       id_ = "";
 
-      userId_ = "";
-
       companyName_ = "";
-
-      photoUrl_ = "";
 
       return this;
     }
@@ -517,9 +403,7 @@ private static final long serialVersionUID = 0L;
     public com.wanpng.employers-users.grpc.domain.CompanyProfileGrpc buildPartial() {
       com.wanpng.employers-users.grpc.domain.CompanyProfileGrpc result = new com.wanpng.employers-users.grpc.domain.CompanyProfileGrpc(this);
       result.id_ = id_;
-      result.userId_ = userId_;
       result.companyName_ = companyName_;
-      result.photoUrl_ = photoUrl_;
       onBuilt();
       return result;
     }
@@ -572,16 +456,8 @@ private static final long serialVersionUID = 0L;
         id_ = other.id_;
         onChanged();
       }
-      if (!other.getUserId().isEmpty()) {
-        userId_ = other.userId_;
-        onChanged();
-      }
       if (!other.getCompanyName().isEmpty()) {
         companyName_ = other.companyName_;
-        onChanged();
-      }
-      if (!other.getPhotoUrl().isEmpty()) {
-        photoUrl_ = other.photoUrl_;
         onChanged();
       }
       this.mergeUnknownFields(other.unknownFields);
@@ -689,85 +565,9 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.lang.Object userId_ = "";
-    /**
-     * <code>string user_id = 2;</code>
-     * @return The userId.
-     */
-    public java.lang.String getUserId() {
-      java.lang.Object ref = userId_;
-      if (!(ref instanceof java.lang.String)) {
-        com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        userId_ = s;
-        return s;
-      } else {
-        return (java.lang.String) ref;
-      }
-    }
-    /**
-     * <code>string user_id = 2;</code>
-     * @return The bytes for userId.
-     */
-    public com.google.protobuf.ByteString
-        getUserIdBytes() {
-      java.lang.Object ref = userId_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        userId_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    /**
-     * <code>string user_id = 2;</code>
-     * @param value The userId to set.
-     * @return This builder for chaining.
-     */
-    public Builder setUserId(
-        java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
-      userId_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>string user_id = 2;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearUserId() {
-      
-      userId_ = getDefaultInstance().getUserId();
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>string user_id = 2;</code>
-     * @param value The bytes for userId to set.
-     * @return This builder for chaining.
-     */
-    public Builder setUserIdBytes(
-        com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
-      userId_ = value;
-      onChanged();
-      return this;
-    }
-
     private java.lang.Object companyName_ = "";
     /**
-     * <code>string company_name = 3;</code>
+     * <code>string company_name = 2;</code>
      * @return The companyName.
      */
     public java.lang.String getCompanyName() {
@@ -783,7 +583,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>string company_name = 3;</code>
+     * <code>string company_name = 2;</code>
      * @return The bytes for companyName.
      */
     public com.google.protobuf.ByteString
@@ -800,7 +600,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>string company_name = 3;</code>
+     * <code>string company_name = 2;</code>
      * @param value The companyName to set.
      * @return This builder for chaining.
      */
@@ -815,7 +615,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>string company_name = 3;</code>
+     * <code>string company_name = 2;</code>
      * @return This builder for chaining.
      */
     public Builder clearCompanyName() {
@@ -825,7 +625,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>string company_name = 3;</code>
+     * <code>string company_name = 2;</code>
      * @param value The bytes for companyName to set.
      * @return This builder for chaining.
      */
@@ -837,82 +637,6 @@ private static final long serialVersionUID = 0L;
   checkByteStringIsUtf8(value);
       
       companyName_ = value;
-      onChanged();
-      return this;
-    }
-
-    private java.lang.Object photoUrl_ = "";
-    /**
-     * <code>string photo_url = 4;</code>
-     * @return The photoUrl.
-     */
-    public java.lang.String getPhotoUrl() {
-      java.lang.Object ref = photoUrl_;
-      if (!(ref instanceof java.lang.String)) {
-        com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        photoUrl_ = s;
-        return s;
-      } else {
-        return (java.lang.String) ref;
-      }
-    }
-    /**
-     * <code>string photo_url = 4;</code>
-     * @return The bytes for photoUrl.
-     */
-    public com.google.protobuf.ByteString
-        getPhotoUrlBytes() {
-      java.lang.Object ref = photoUrl_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        photoUrl_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    /**
-     * <code>string photo_url = 4;</code>
-     * @param value The photoUrl to set.
-     * @return This builder for chaining.
-     */
-    public Builder setPhotoUrl(
-        java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
-      photoUrl_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>string photo_url = 4;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearPhotoUrl() {
-      
-      photoUrl_ = getDefaultInstance().getPhotoUrl();
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>string photo_url = 4;</code>
-     * @param value The bytes for photoUrl to set.
-     * @return This builder for chaining.
-     */
-    public Builder setPhotoUrlBytes(
-        com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
-      photoUrl_ = value;
       onChanged();
       return this;
     }
